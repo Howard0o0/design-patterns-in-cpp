@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/howard/work/design-patterns-in-cpp
 CMakeFiles/singleton.app.dir/all:
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/depend
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=1,2 "Built target singleton.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=3,4 "Built target singleton.app"
 .PHONY : CMakeFiles/singleton.app.dir/all
 
 # Include target in all.
@@ -93,6 +93,43 @@ CMakeFiles/singleton.app.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/singleton.app.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/factory.app.dir
+
+# All Build rule for target.
+CMakeFiles/factory.app.dir/all:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/depend
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=1,2 "Built target factory.app"
+.PHONY : CMakeFiles/factory.app.dir/all
+
+# Include target in all.
+all: CMakeFiles/factory.app.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/factory.app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/factory.app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 0
+.PHONY : CMakeFiles/factory.app.dir/rule
+
+# Convenience name for target.
+factory.app: CMakeFiles/factory.app.dir/rule
+
+.PHONY : factory.app
+
+# clean rule for target.
+CMakeFiles/factory.app.dir/clean:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/clean
+.PHONY : CMakeFiles/factory.app.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/factory.app.dir/clean
 
 .PHONY : clean
 

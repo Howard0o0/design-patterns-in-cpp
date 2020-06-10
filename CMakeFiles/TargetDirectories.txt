@@ -1,3 +1,4 @@
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/rebuild_cache.dir
-/home/howard/work/design-patterns-in-cpp/CMakeFiles/singleton.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/edit_cache.dir
+/home/howard/work/design-patterns-in-cpp/CMakeFiles/singleton.app.dir
+/home/howard/work/design-patterns-in-cpp/CMakeFiles/factory.app.dir

@@ -123,6 +123,46 @@ singleton.app/fast:
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
 .PHONY : singleton.app/fast
 
+#=============================================================================
+# Target rules for targets named factory.app
+
+# Build rule for target.
+factory.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 factory.app
+.PHONY : factory.app
+
+# fast build rule for target.
+factory.app/fast:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/build
+.PHONY : factory.app/fast
+
+src/factory/main.o: src/factory/main.cc.o
+
+.PHONY : src/factory/main.o
+
+# target to build an object file
+src/factory/main.cc.o:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/src/factory/main.cc.o
+.PHONY : src/factory/main.cc.o
+
+src/factory/main.i: src/factory/main.cc.i
+
+.PHONY : src/factory/main.i
+
+# target to preprocess a source file
+src/factory/main.cc.i:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/src/factory/main.cc.i
+.PHONY : src/factory/main.cc.i
+
+src/factory/main.s: src/factory/main.cc.s
+
+.PHONY : src/factory/main.s
+
+# target to generate assembly for a file
+src/factory/main.cc.s:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/src/factory/main.cc.s
+.PHONY : src/factory/main.cc.s
+
 src/singleton/main.o: src/singleton/main.cc.o
 
 .PHONY : src/singleton/main.o
@@ -157,8 +197,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... singleton.app"
 	@echo "... edit_cache"
+	@echo "... singleton.app"
+	@echo "... factory.app"
+	@echo "... src/factory/main.o"
+	@echo "... src/factory/main.i"
+	@echo "... src/factory/main.s"
 	@echo "... src/singleton/main.o"
 	@echo "... src/singleton/main.i"
 	@echo "... src/singleton/main.s"

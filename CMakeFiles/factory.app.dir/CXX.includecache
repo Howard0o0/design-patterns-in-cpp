@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/factory/abstractfactory.h
+soap.h
+/home/howard/work/design-patterns-in-cpp/src/factory/soap.h
+memory
+-
+
+/home/howard/work/design-patterns-in-cpp/src/factory/factorymethod.h
+soap.h
+/home/howard/work/design-patterns-in-cpp/src/factory/soap.h
+memory
+-
+
+/home/howard/work/design-patterns-in-cpp/src/factory/main.cc
+abstractfactory.h
+/home/howard/work/design-patterns-in-cpp/src/factory/abstractfactory.h
+factorymethod.h
+/home/howard/work/design-patterns-in-cpp/src/factory/factorymethod.h
+simplefactory.h
+/home/howard/work/design-patterns-in-cpp/src/factory/simplefactory.h
+memory
+-
+
+/home/howard/work/design-patterns-in-cpp/src/factory/simplefactory.h
+soap.h
+/home/howard/work/design-patterns-in-cpp/src/factory/soap.h
+iostream
+-
+memory
+-
+
+/home/howard/work/design-patterns-in-cpp/src/factory/soap.h
+iostream
+-
+

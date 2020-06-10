@@ -4,6 +4,11 @@
 
 #include <string>
 
+/*
+ * advantage:
+ * 	thread safety
+ * 	lazy
+*/
 
 
 class Singleton {
