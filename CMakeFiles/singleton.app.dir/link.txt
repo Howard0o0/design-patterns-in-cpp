@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/singleton.app.dir/src/singleton/main.cc.o  -o bin/singleton.app 
