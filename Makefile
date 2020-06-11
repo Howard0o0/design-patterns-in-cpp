@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named wrapper.app
+
+# Build rule for target.
+wrapper.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wrapper.app
+.PHONY : wrapper.app
+
+# fast build rule for target.
+wrapper.app/fast:
+	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/build
+.PHONY : wrapper.app/fast
+
+#=============================================================================
 # Target rules for targets named singleton.app
 
 # Build rule for target.
@@ -190,6 +203,33 @@ src/singleton/main.cc.s:
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/src/singleton/main.cc.s
 .PHONY : src/singleton/main.cc.s
 
+src/wrapper/wrappertest.o: src/wrapper/wrappertest.cc.o
+
+.PHONY : src/wrapper/wrappertest.o
+
+# target to build an object file
+src/wrapper/wrappertest.cc.o:
+	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/src/wrapper/wrappertest.cc.o
+.PHONY : src/wrapper/wrappertest.cc.o
+
+src/wrapper/wrappertest.i: src/wrapper/wrappertest.cc.i
+
+.PHONY : src/wrapper/wrappertest.i
+
+# target to preprocess a source file
+src/wrapper/wrappertest.cc.i:
+	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/src/wrapper/wrappertest.cc.i
+.PHONY : src/wrapper/wrappertest.cc.i
+
+src/wrapper/wrappertest.s: src/wrapper/wrappertest.cc.s
+
+.PHONY : src/wrapper/wrappertest.s
+
+# target to generate assembly for a file
+src/wrapper/wrappertest.cc.s:
+	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/src/wrapper/wrappertest.cc.s
+.PHONY : src/wrapper/wrappertest.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +238,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... wrapper.app"
 	@echo "... singleton.app"
 	@echo "... factory.app"
 	@echo "... src/factory/main.o"
@@ -206,6 +247,9 @@ help:
 	@echo "... src/singleton/main.o"
 	@echo "... src/singleton/main.i"
 	@echo "... src/singleton/main.s"
+	@echo "... src/wrapper/wrappertest.o"
+	@echo "... src/wrapper/wrappertest.i"
+	@echo "... src/wrapper/wrappertest.s"
 .PHONY : help
 
 

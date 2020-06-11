@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/wrapper/adapter.h
+iostream
+-
+
+/home/howard/work/design-patterns-in-cpp/src/wrapper/decorator.h
+iostream
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/wrapper/wrappertest.cc
+adapter.h
+/home/howard/work/design-patterns-in-cpp/src/wrapper/adapter.h
+decorator.h
+/home/howard/work/design-patterns-in-cpp/src/wrapper/decorator.h
+iostream
+-
+memory
+-
+

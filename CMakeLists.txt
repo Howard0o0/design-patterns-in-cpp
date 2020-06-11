@@ -30,14 +30,17 @@ set(CXX_FLAGS
 #find head files
 include_directories(./src/singleton)
 include_directories(./src/factory)
+include_directories(./src/wrapper)
 
 #find source files
 aux_source_directory(./src/singleton SINGLETON_SRC_FILES )
 aux_source_directory(./src/factory FACTORY_SRC_FILES )
+aux_source_directory(./src/wrapper WRAPPER_SRC_FILES )
 
 #创建工程文件
 add_executable(singleton.app ${SINGLETON_SRC_FILES} )
 add_executable(factory.app ${FACTORY_SRC_FILES} )
+add_executable(wrapper.app ${WRAPPER_SRC_FILES} )
  
 #添加Qt5依赖项
 # target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Core Qt5::Gui)
