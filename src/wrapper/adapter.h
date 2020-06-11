@@ -1,60 +1,34 @@
 #ifndef DESIGN_PATTERNS_IN_CPP_ADAPTER_H
 #define DESIGN_PATTERNS_IN_CPP_ADAPTER_H
 
-
 #include <iostream>
+#include <vector>
 
 namespace adapter {
 
-//双端队列
-class Deque {
-    public:
-	void push_back(int x) {
-		std::cout << "Deque push_back" << std::endl;
-	}
-	void push_front(int x) {
-		std::cout << "Deque push_front" << std::endl;
-	}
-	void pop_back() {
-		std::cout << "Deque pop_back" << std::endl;
-	}
-	void pop_front() {
-		std::cout << "Deque pop_front" << std::endl;
-	}
-};
 //顺序容器
-class Sequence {
+class SequenceContainer {
     public:
-	virtual void push(int x) = 0;
-	virtual void pop()       = 0;
+	virtual void   push(int x) = 0;
+	virtual void   pop()       = 0;
+	virtual size_t size()      = 0;
 };
-//栈
-class Stack : public Sequence {
+class MyStack : public SequenceContainer {
     public:
-	void push(int x) {
-		deque.push_back(x);
+	void push(int x) override {
+		vec.push_back(x);
 	}
-	void pop() {
-		deque.pop_back();
+	void pop() override {
+		vec.pop_back();
+	}
+
+	size_t size() override {
+		return vec.size();
 	}
 
     private:
-	Deque deque;  //双端队列
-};
-//队列
-class Queue : public Sequence {
-    public:
-	void push(int x) {
-		deque.push_back(x);
-	}
-	void pop() {
-		deque.pop_front();
-	}
-
-    private:
-	Deque deque;  //双端队列
+	std::vector< int > vec;
 };
 }  // namespace adapter
-
 
 #endif

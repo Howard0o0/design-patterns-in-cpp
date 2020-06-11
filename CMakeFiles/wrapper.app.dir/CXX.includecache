@@ -9,6 +9,8 @@
 /home/howard/work/design-patterns-in-cpp/src/wrapper/adapter.h
 iostream
 -
+vector
+-
 
 /home/howard/work/design-patterns-in-cpp/src/wrapper/decorator.h
 iostream
