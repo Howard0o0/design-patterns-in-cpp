@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/observer.app.dir/src/observer/observertest.cc.o  -o bin/observer.app 

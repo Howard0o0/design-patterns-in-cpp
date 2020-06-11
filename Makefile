@@ -137,6 +137,19 @@ singleton.app/fast:
 .PHONY : singleton.app/fast
 
 #=============================================================================
+# Target rules for targets named observer.app
+
+# Build rule for target.
+observer.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 observer.app
+.PHONY : observer.app
+
+# fast build rule for target.
+observer.app/fast:
+	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/build
+.PHONY : observer.app/fast
+
+#=============================================================================
 # Target rules for targets named factory.app
 
 # Build rule for target.
@@ -175,6 +188,33 @@ src/factory/main.s: src/factory/main.cc.s
 src/factory/main.cc.s:
 	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/src/factory/main.cc.s
 .PHONY : src/factory/main.cc.s
+
+src/observer/observertest.o: src/observer/observertest.cc.o
+
+.PHONY : src/observer/observertest.o
+
+# target to build an object file
+src/observer/observertest.cc.o:
+	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/src/observer/observertest.cc.o
+.PHONY : src/observer/observertest.cc.o
+
+src/observer/observertest.i: src/observer/observertest.cc.i
+
+.PHONY : src/observer/observertest.i
+
+# target to preprocess a source file
+src/observer/observertest.cc.i:
+	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/src/observer/observertest.cc.i
+.PHONY : src/observer/observertest.cc.i
+
+src/observer/observertest.s: src/observer/observertest.cc.s
+
+.PHONY : src/observer/observertest.s
+
+# target to generate assembly for a file
+src/observer/observertest.cc.s:
+	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/src/observer/observertest.cc.s
+.PHONY : src/observer/observertest.cc.s
 
 src/singleton/main.o: src/singleton/main.cc.o
 
@@ -240,10 +280,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... wrapper.app"
 	@echo "... singleton.app"
+	@echo "... observer.app"
 	@echo "... factory.app"
 	@echo "... src/factory/main.o"
 	@echo "... src/factory/main.i"
 	@echo "... src/factory/main.s"
+	@echo "... src/observer/observertest.o"
+	@echo "... src/observer/observertest.i"
+	@echo "... src/observer/observertest.s"
 	@echo "... src/singleton/main.o"
 	@echo "... src/singleton/main.i"
 	@echo "... src/singleton/main.s"

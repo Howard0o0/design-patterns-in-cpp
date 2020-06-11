@@ -44,5 +44,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/wrapper.app.dir/DependInfo.cmake"
   "CMakeFiles/singleton.app.dir/DependInfo.cmake"
+  "CMakeFiles/observer.app.dir/DependInfo.cmake"
   "CMakeFiles/factory.app.dir/DependInfo.cmake"
   )
