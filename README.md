@@ -1,6 +1,7 @@
 # design-patterns-in-cpp
-Try to be effective in cpp
+用简单的场景理解设计模式
 
-# code style
+
+## code style
 https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/naming/#function-names
 
