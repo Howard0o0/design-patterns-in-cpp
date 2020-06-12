@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/strategy.app.dir/src/strategy/strategytest.cc.o  -o bin/strategy.app 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/strategy/strategy.h
+
+/home/howard/work/design-patterns-in-cpp/src/strategy/strategytest.cc
+strategy.h
+/home/howard/work/design-patterns-in-cpp/src/strategy/strategy.h
+iostream
+-
+

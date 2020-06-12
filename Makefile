@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named observer.app
+
+# Build rule for target.
+observer.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 observer.app
+.PHONY : observer.app
+
+# fast build rule for target.
+observer.app/fast:
+	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/build
+.PHONY : observer.app/fast
+
+#=============================================================================
+# Target rules for targets named strategy.app
+
+# Build rule for target.
+strategy.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 strategy.app
+.PHONY : strategy.app
+
+# fast build rule for target.
+strategy.app/fast:
+	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/build
+.PHONY : strategy.app/fast
+
+#=============================================================================
+# Target rules for targets named factory.app
+
+# Build rule for target.
+factory.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 factory.app
+.PHONY : factory.app
+
+# fast build rule for target.
+factory.app/fast:
+	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/build
+.PHONY : factory.app/fast
+
+#=============================================================================
 # Target rules for targets named wrapper.app
 
 # Build rule for target.
@@ -135,32 +174,6 @@ singleton.app: cmake_check_build_system
 singleton.app/fast:
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
 .PHONY : singleton.app/fast
-
-#=============================================================================
-# Target rules for targets named observer.app
-
-# Build rule for target.
-observer.app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 observer.app
-.PHONY : observer.app
-
-# fast build rule for target.
-observer.app/fast:
-	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/build
-.PHONY : observer.app/fast
-
-#=============================================================================
-# Target rules for targets named factory.app
-
-# Build rule for target.
-factory.app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 factory.app
-.PHONY : factory.app
-
-# fast build rule for target.
-factory.app/fast:
-	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/build
-.PHONY : factory.app/fast
 
 src/factory/main.o: src/factory/main.cc.o
 
@@ -243,6 +256,33 @@ src/singleton/main.cc.s:
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/src/singleton/main.cc.s
 .PHONY : src/singleton/main.cc.s
 
+src/strategy/strategytest.o: src/strategy/strategytest.cc.o
+
+.PHONY : src/strategy/strategytest.o
+
+# target to build an object file
+src/strategy/strategytest.cc.o:
+	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/src/strategy/strategytest.cc.o
+.PHONY : src/strategy/strategytest.cc.o
+
+src/strategy/strategytest.i: src/strategy/strategytest.cc.i
+
+.PHONY : src/strategy/strategytest.i
+
+# target to preprocess a source file
+src/strategy/strategytest.cc.i:
+	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/src/strategy/strategytest.cc.i
+.PHONY : src/strategy/strategytest.cc.i
+
+src/strategy/strategytest.s: src/strategy/strategytest.cc.s
+
+.PHONY : src/strategy/strategytest.s
+
+# target to generate assembly for a file
+src/strategy/strategytest.cc.s:
+	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/src/strategy/strategytest.cc.s
+.PHONY : src/strategy/strategytest.cc.s
+
 src/wrapper/wrappertest.o: src/wrapper/wrappertest.cc.o
 
 .PHONY : src/wrapper/wrappertest.o
@@ -277,11 +317,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... observer.app"
+	@echo "... strategy.app"
+	@echo "... factory.app"
 	@echo "... wrapper.app"
 	@echo "... singleton.app"
-	@echo "... observer.app"
-	@echo "... factory.app"
+	@echo "... edit_cache"
 	@echo "... src/factory/main.o"
 	@echo "... src/factory/main.i"
 	@echo "... src/factory/main.s"
@@ -291,6 +332,9 @@ help:
 	@echo "... src/singleton/main.o"
 	@echo "... src/singleton/main.i"
 	@echo "... src/singleton/main.s"
+	@echo "... src/strategy/strategytest.o"
+	@echo "... src/strategy/strategytest.i"
+	@echo "... src/strategy/strategytest.s"
 	@echo "... src/wrapper/wrappertest.o"
 	@echo "... src/wrapper/wrappertest.i"
 	@echo "... src/wrapper/wrappertest.s"
