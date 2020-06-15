@@ -13,4 +13,6 @@ strategy.h
 /home/howard/work/design-patterns-in-cpp/src/strategy/strategy.h
 iostream
 -
+string
+-
 

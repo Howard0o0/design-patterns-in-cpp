@@ -97,6 +97,43 @@ clean: CMakeFiles/observer.app.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/singleton.app.dir
+
+# All Build rule for target.
+CMakeFiles/singleton.app.dir/all:
+	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/depend
+	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=5,6 "Built target singleton.app"
+.PHONY : CMakeFiles/singleton.app.dir/all
+
+# Include target in all.
+all: CMakeFiles/singleton.app.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/singleton.app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/singleton.app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 0
+.PHONY : CMakeFiles/singleton.app.dir/rule
+
+# Convenience name for target.
+singleton.app: CMakeFiles/singleton.app.dir/rule
+
+.PHONY : singleton.app
+
+# clean rule for target.
+CMakeFiles/singleton.app.dir/clean:
+	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/clean
+.PHONY : CMakeFiles/singleton.app.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/singleton.app.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/strategy.app.dir
 
 # All Build rule for target.
@@ -177,7 +214,7 @@ clean: CMakeFiles/factory.app.dir/clean
 CMakeFiles/wrapper.app.dir/all:
 	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/depend
 	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=9,10 "Built target wrapper.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=11,12 "Built target wrapper.app"
 .PHONY : CMakeFiles/wrapper.app.dir/all
 
 # Include target in all.
@@ -208,39 +245,39 @@ clean: CMakeFiles/wrapper.app.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/singleton.app.dir
+# Target rules for target CMakeFiles/templatepattern.app.dir
 
 # All Build rule for target.
-CMakeFiles/singleton.app.dir/all:
-	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/depend
-	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=5,6 "Built target singleton.app"
-.PHONY : CMakeFiles/singleton.app.dir/all
+CMakeFiles/templatepattern.app.dir/all:
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/depend
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=9,10 "Built target templatepattern.app"
+.PHONY : CMakeFiles/templatepattern.app.dir/all
 
 # Include target in all.
-all: CMakeFiles/singleton.app.dir/all
+all: CMakeFiles/templatepattern.app.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/singleton.app.dir/rule: cmake_check_build_system
+CMakeFiles/templatepattern.app.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/singleton.app.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/templatepattern.app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 0
-.PHONY : CMakeFiles/singleton.app.dir/rule
+.PHONY : CMakeFiles/templatepattern.app.dir/rule
 
 # Convenience name for target.
-singleton.app: CMakeFiles/singleton.app.dir/rule
+templatepattern.app: CMakeFiles/templatepattern.app.dir/rule
 
-.PHONY : singleton.app
-
-# clean rule for target.
-CMakeFiles/singleton.app.dir/clean:
-	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/clean
-.PHONY : CMakeFiles/singleton.app.dir/clean
+.PHONY : templatepattern.app
 
 # clean rule for target.
-clean: CMakeFiles/singleton.app.dir/clean
+CMakeFiles/templatepattern.app.dir/clean:
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/clean
+.PHONY : CMakeFiles/templatepattern.app.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/templatepattern.app.dir/clean
 
 .PHONY : clean
 

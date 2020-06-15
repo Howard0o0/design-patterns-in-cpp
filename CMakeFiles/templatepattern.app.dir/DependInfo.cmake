@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/howard/work/design-patterns-in-cpp/src/wrapper/wrappertest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/wrapper.app.dir/src/wrapper/wrappertest.cc.o"
+  "/home/howard/work/design-patterns-in-cpp/src/templatepattern/templatetest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/templatepattern.app.dir/src/templatepattern/templatetest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

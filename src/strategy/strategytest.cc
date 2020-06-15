@@ -1,5 +1,6 @@
 #include "strategy.h"
 #include <iostream>
+#include <string>
 
 int main() {
 

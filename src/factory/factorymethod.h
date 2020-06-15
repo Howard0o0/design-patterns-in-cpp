@@ -13,19 +13,19 @@ class SoapFactory {
 
 class LuxFactory : public SoapFactory {
     public:
-	std::shared_ptr< SoapBase > CreatSoap() override {
+	virtual std::shared_ptr< SoapBase > CreatSoap() override {
 		return std::shared_ptr< SoapBase >(new LuxSoap());
 	}
 };
 class DoveFactory : public SoapFactory {
     public:
-	std::shared_ptr< SoapBase > CreatSoap() override {
+	virtual std::shared_ptr< SoapBase > CreatSoap() override {
 		return std::shared_ptr< SoapBase >(new DoveSoap());
 	}
 };
 class OlayFactory : public SoapFactory {
     public:
-	std::shared_ptr< SoapBase > CreatSoap() override {
+	virtual std::shared_ptr< SoapBase > CreatSoap() override {
 		return std::shared_ptr< SoapBase >(new OlaySoap());
 	}
 };

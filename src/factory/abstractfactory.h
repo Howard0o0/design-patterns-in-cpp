@@ -14,10 +14,10 @@ class FactoryBase {
 
 class LuxFactory : public FactoryBase {
     public:
-	std::shared_ptr< SoapBase > CreateSoap() override {
+	virtual std::shared_ptr< SoapBase > CreateSoap() override {
 		return std::shared_ptr< SoapBase >(new LuxSoap());
 	}
-	std::shared_ptr< ToothpasteBase > CreateToothpaste() override {
+	virtual std::shared_ptr< ToothpasteBase > CreateToothpaste() override {
 		return std::shared_ptr< ToothpasteBase >(new LuxToothpaste());
 	}
 };

@@ -12,20 +12,20 @@ class SoapBase {
 
 class LuxSoap : public SoapBase {
     public:
-	void ShowName() override {
+	virtual void ShowName() override {
 		std::cout << "i am a lux soap!" << std::endl;
 	}
 };
 
 class DoveSoap : public SoapBase {
     public:
-	void ShowName() override {
+	virtual void ShowName() override {
 		std::cout << "i am a dove soap!" << std::endl;
 	}
 };
 class OlaySoap : public SoapBase {
     public:
-	void ShowName() override {
+	virtual void ShowName() override {
 		std::cout << "i am an olay soap!" << std::endl;
 	}
 };
@@ -41,7 +41,7 @@ class ToothpasteBase {
 class LuxToothpaste : public ToothpasteBase {
 
     public:
-	void ShowName() override {
+	virtual void ShowName() override {
 		std::cout << "i am a lux toothpaste!" << std::endl;
 	}
 };
@@ -49,7 +49,7 @@ class LuxToothpaste : public ToothpasteBase {
 class OlayToothpaste : public ToothpasteBase {
 
     public:
-	void ShowName() override {
+	virtual void ShowName() override {
 		std::cout << "i am an olay toothpaste!" << std::endl;
 	}
 };

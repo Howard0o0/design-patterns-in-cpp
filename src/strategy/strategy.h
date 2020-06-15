@@ -10,7 +10,7 @@ class Cash {
 
 class CashNormal : public Cash {
     public:
-	double CalcActualPrice(double price) override {
+	virtual double CalcActualPrice(double price) override {
 		return price;
 	}
 };
@@ -22,7 +22,7 @@ class CashDiscount : public Cash {
 		else if (discount_ < 0)
 			discount_ = 0.0;
 	}
-	double CalcActualPrice(double price) override {
+	virtual double CalcActualPrice(double price) override {
 		return price * discount_;
 	}
 
@@ -36,7 +36,7 @@ class CashReturn : public Cash {
 		: money_condition_(money_condition),
 		  money_return_(money_return) {
 	}
-	double CalcActualPrice(double price) override {
+	virtual double CalcActualPrice(double price) override {
 		if (price < money_condition_)
 			return price;
 		double money_to_return =

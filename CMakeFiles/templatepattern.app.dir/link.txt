@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/templatepattern.app.dir/src/templatepattern/templatetest.cc.o  -o bin/templatepattern.app 

@@ -9,10 +9,11 @@ namespace decorator {
 class CoffeeBase {
 
     public:
-	CoffeeBase(const std::string& name, double price) : name_(name), price_(price) {
+	CoffeeBase(const std::string& name, double price)
+		: name_(name), price_(price) {
 	}
 	CoffeeBase() = default;
-	
+
 	virtual double price() {
 		return price_;
 	}
@@ -48,10 +49,10 @@ class AddMilk : public CoffeeDecrotor {
     public:
 	AddMilk(CoffeeBase* coffee) : CoffeeDecrotor(coffee) {
 	}
-	double price() override {
+	virtual double price() override {
 		return this->price_ + coffee_->price();
 	}
-	std::string name() override {
+	virtual std::string name() override {
 		return this->name_ + coffee_->name();
 	}
 
@@ -65,10 +66,10 @@ class AddWip : public CoffeeDecrotor {
 	AddWip(CoffeeBase* coffee) : CoffeeDecrotor(coffee) {
 	}
 
-	double price() override {
+	virtual double price() override {
 		return this->price_ + coffee_->price();
 	}
-	std::string name() override {
+	virtual std::string name() override {
 		return this->name_ + coffee_->name();
 	}
 

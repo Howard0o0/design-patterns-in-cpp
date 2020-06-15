@@ -34,6 +34,7 @@ include_directories(
 		./src/wrapper
 		./src/observer
 		./src/strategy
+		./src/templatepattern
 		)
 
 #find source files
@@ -42,6 +43,7 @@ aux_source_directory(./src/factory FACTORY_SRC_FILES )
 aux_source_directory(./src/wrapper WRAPPER_SRC_FILES )
 aux_source_directory(./src/observer OBSERVER_SRC_FILES )
 aux_source_directory(./src/strategy STRATEGY_SRC_FILES )
+aux_source_directory(./src/templatepattern TEMPLATEPATTERN_SRC_FILES )
 
 #创建工程文件
 add_executable(singleton.app ${SINGLETON_SRC_FILES} )
@@ -49,6 +51,7 @@ add_executable(factory.app ${FACTORY_SRC_FILES} )
 add_executable(wrapper.app ${WRAPPER_SRC_FILES} )
 add_executable(observer.app ${OBSERVER_SRC_FILES} )
 add_executable(strategy.app ${STRATEGY_SRC_FILES} )
+add_executable(templatepattern.app ${TEMPLATEPATTERN_SRC_FILES} )
  
 #添加Qt5依赖项
 # target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Core Qt5::Gui)

@@ -15,14 +15,14 @@ class SequenceContainer {
 };
 class MyStack : public SequenceContainer {
     public:
-	void push(int x) override {
+	virtual void push(int x) override {
 		vec.push_back(x);
 	}
-	void pop() override {
+	virtual void pop() override {
 		vec.pop_back();
 	}
 
-	size_t size() override {
+	virtual size_t size() override {
 		return vec.size();
 	}
 

@@ -124,6 +124,19 @@ observer.app/fast:
 .PHONY : observer.app/fast
 
 #=============================================================================
+# Target rules for targets named singleton.app
+
+# Build rule for target.
+singleton.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 singleton.app
+.PHONY : singleton.app
+
+# fast build rule for target.
+singleton.app/fast:
+	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
+.PHONY : singleton.app/fast
+
+#=============================================================================
 # Target rules for targets named strategy.app
 
 # Build rule for target.
@@ -163,17 +176,17 @@ wrapper.app/fast:
 .PHONY : wrapper.app/fast
 
 #=============================================================================
-# Target rules for targets named singleton.app
+# Target rules for targets named templatepattern.app
 
 # Build rule for target.
-singleton.app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 singleton.app
-.PHONY : singleton.app
+templatepattern.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 templatepattern.app
+.PHONY : templatepattern.app
 
 # fast build rule for target.
-singleton.app/fast:
-	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
-.PHONY : singleton.app/fast
+templatepattern.app/fast:
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/build
+.PHONY : templatepattern.app/fast
 
 src/factory/main.o: src/factory/main.cc.o
 
@@ -283,6 +296,33 @@ src/strategy/strategytest.cc.s:
 	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/src/strategy/strategytest.cc.s
 .PHONY : src/strategy/strategytest.cc.s
 
+src/templatepattern/templatetest.o: src/templatepattern/templatetest.cc.o
+
+.PHONY : src/templatepattern/templatetest.o
+
+# target to build an object file
+src/templatepattern/templatetest.cc.o:
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/src/templatepattern/templatetest.cc.o
+.PHONY : src/templatepattern/templatetest.cc.o
+
+src/templatepattern/templatetest.i: src/templatepattern/templatetest.cc.i
+
+.PHONY : src/templatepattern/templatetest.i
+
+# target to preprocess a source file
+src/templatepattern/templatetest.cc.i:
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/src/templatepattern/templatetest.cc.i
+.PHONY : src/templatepattern/templatetest.cc.i
+
+src/templatepattern/templatetest.s: src/templatepattern/templatetest.cc.s
+
+.PHONY : src/templatepattern/templatetest.s
+
+# target to generate assembly for a file
+src/templatepattern/templatetest.cc.s:
+	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/src/templatepattern/templatetest.cc.s
+.PHONY : src/templatepattern/templatetest.cc.s
+
 src/wrapper/wrappertest.o: src/wrapper/wrappertest.cc.o
 
 .PHONY : src/wrapper/wrappertest.o
@@ -318,11 +358,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... observer.app"
+	@echo "... edit_cache"
+	@echo "... singleton.app"
 	@echo "... strategy.app"
 	@echo "... factory.app"
 	@echo "... wrapper.app"
-	@echo "... singleton.app"
-	@echo "... edit_cache"
+	@echo "... templatepattern.app"
 	@echo "... src/factory/main.o"
 	@echo "... src/factory/main.i"
 	@echo "... src/factory/main.s"
@@ -335,6 +376,9 @@ help:
 	@echo "... src/strategy/strategytest.o"
 	@echo "... src/strategy/strategytest.i"
 	@echo "... src/strategy/strategytest.s"
+	@echo "... src/templatepattern/templatetest.o"
+	@echo "... src/templatepattern/templatetest.i"
+	@echo "... src/templatepattern/templatetest.s"
 	@echo "... src/wrapper/wrappertest.o"
 	@echo "... src/wrapper/wrappertest.i"
 	@echo "... src/wrapper/wrappertest.s"

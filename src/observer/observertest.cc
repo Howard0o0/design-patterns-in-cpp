@@ -16,7 +16,7 @@ void ObserverTest() {
 	    public:
 		BlogFollower(const std::string& name) : name_(name) {
 		}
-		void update() override {
+		virtual void update() override {
 			std::cout << name_ << " receive blog's update" << std::endl;
 		}
 

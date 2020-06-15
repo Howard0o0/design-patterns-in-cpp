@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/templatepattern/templatepattern.h
+iostream
+-
+
+/home/howard/work/design-patterns-in-cpp/src/templatepattern/templatetest.cc
+templatepattern.h
+/home/howard/work/design-patterns-in-cpp/src/templatepattern/templatepattern.h
+iostream
+-
+
