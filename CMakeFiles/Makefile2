@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/howard/work/design-patterns-in-cpp
 CMAKE_BINARY_DIR = /home/howard/work/design-patterns-in-cpp
 
 #=============================================================================
+# Target rules for target CMakeFiles/builder.app.dir
+
+# All Build rule for target.
+CMakeFiles/builder.app.dir/all:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/depend
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=1,2,3 "Built target builder.app"
+.PHONY : CMakeFiles/builder.app.dir/all
+
+# Include target in all.
+all: CMakeFiles/builder.app.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/builder.app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/builder.app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/howard/work/design-patterns-in-cpp/CMakeFiles 0
+.PHONY : CMakeFiles/builder.app.dir/rule
+
+# Convenience name for target.
+builder.app: CMakeFiles/builder.app.dir/rule
+
+.PHONY : builder.app
+
+# clean rule for target.
+CMakeFiles/builder.app.dir/clean:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/clean
+.PHONY : CMakeFiles/builder.app.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/builder.app.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/observer.app.dir
 
 # All Build rule for target.
 CMakeFiles/observer.app.dir/all:
 	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/depend
 	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=5,6 "Built target observer.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=8,9 "Built target observer.app"
 .PHONY : CMakeFiles/observer.app.dir/all
 
 # Include target in all.
@@ -103,7 +140,7 @@ clean: CMakeFiles/observer.app.dir/clean
 CMakeFiles/singleton.app.dir/all:
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/depend
 	$(MAKE) -f CMakeFiles/singleton.app.dir/build.make CMakeFiles/singleton.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=7,8 "Built target singleton.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=10,11 "Built target singleton.app"
 .PHONY : CMakeFiles/singleton.app.dir/all
 
 # Include target in all.
@@ -140,7 +177,7 @@ clean: CMakeFiles/singleton.app.dir/clean
 CMakeFiles/facade.app.dir/all:
 	$(MAKE) -f CMakeFiles/facade.app.dir/build.make CMakeFiles/facade.app.dir/depend
 	$(MAKE) -f CMakeFiles/facade.app.dir/build.make CMakeFiles/facade.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=1,2 "Built target facade.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=4,5 "Built target facade.app"
 .PHONY : CMakeFiles/facade.app.dir/all
 
 # Include target in all.
@@ -177,7 +214,7 @@ clean: CMakeFiles/facade.app.dir/clean
 CMakeFiles/strategy.app.dir/all:
 	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/depend
 	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=9,10 "Built target strategy.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=12,13 "Built target strategy.app"
 .PHONY : CMakeFiles/strategy.app.dir/all
 
 # Include target in all.
@@ -214,7 +251,7 @@ clean: CMakeFiles/strategy.app.dir/clean
 CMakeFiles/factory.app.dir/all:
 	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/depend
 	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=3,4 "Built target factory.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=6,7 "Built target factory.app"
 .PHONY : CMakeFiles/factory.app.dir/all
 
 # Include target in all.
@@ -251,7 +288,7 @@ clean: CMakeFiles/factory.app.dir/clean
 CMakeFiles/wrapper.app.dir/all:
 	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/depend
 	$(MAKE) -f CMakeFiles/wrapper.app.dir/build.make CMakeFiles/wrapper.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=13,14 "Built target wrapper.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=16,17 "Built target wrapper.app"
 .PHONY : CMakeFiles/wrapper.app.dir/all
 
 # Include target in all.
@@ -288,7 +325,7 @@ clean: CMakeFiles/wrapper.app.dir/clean
 CMakeFiles/templatepattern.app.dir/all:
 	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/depend
 	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=11,12 "Built target templatepattern.app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/howard/work/design-patterns-in-cpp/CMakeFiles --progress-num=14,15 "Built target templatepattern.app"
 .PHONY : CMakeFiles/templatepattern.app.dir/all
 
 # Include target in all.

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/builder/builder.cc
+builder.h
+/home/howard/work/design-patterns-in-cpp/src/builder/builder.h
+
+/home/howard/work/design-patterns-in-cpp/src/builder/builder.h
+iostream
+-
+memory
+-
+string
+-
+vector
+-
+
+/home/howard/work/design-patterns-in-cpp/src/builder/buildertest.cc
+builder.h
+/home/howard/work/design-patterns-in-cpp/src/builder/builder.h
+iostream
+-
+memory
+-
+

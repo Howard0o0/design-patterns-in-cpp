@@ -17,6 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "./src/strategy"
   "./src/templatepattern"
   "./src/facade"
+  "./src/builder"
   )
 
 # Targets to which this target links.

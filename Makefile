@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named builder.app
+
+# Build rule for target.
+builder.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 builder.app
+.PHONY : builder.app
+
+# fast build rule for target.
+builder.app/fast:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/build
+.PHONY : builder.app/fast
+
+#=============================================================================
 # Target rules for targets named observer.app
 
 # Build rule for target.
@@ -200,6 +213,60 @@ templatepattern.app: cmake_check_build_system
 templatepattern.app/fast:
 	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/build
 .PHONY : templatepattern.app/fast
+
+src/builder/builder.o: src/builder/builder.cc.o
+
+.PHONY : src/builder/builder.o
+
+# target to build an object file
+src/builder/builder.cc.o:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/builder.cc.o
+.PHONY : src/builder/builder.cc.o
+
+src/builder/builder.i: src/builder/builder.cc.i
+
+.PHONY : src/builder/builder.i
+
+# target to preprocess a source file
+src/builder/builder.cc.i:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/builder.cc.i
+.PHONY : src/builder/builder.cc.i
+
+src/builder/builder.s: src/builder/builder.cc.s
+
+.PHONY : src/builder/builder.s
+
+# target to generate assembly for a file
+src/builder/builder.cc.s:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/builder.cc.s
+.PHONY : src/builder/builder.cc.s
+
+src/builder/buildertest.o: src/builder/buildertest.cc.o
+
+.PHONY : src/builder/buildertest.o
+
+# target to build an object file
+src/builder/buildertest.cc.o:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/buildertest.cc.o
+.PHONY : src/builder/buildertest.cc.o
+
+src/builder/buildertest.i: src/builder/buildertest.cc.i
+
+.PHONY : src/builder/buildertest.i
+
+# target to preprocess a source file
+src/builder/buildertest.cc.i:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/buildertest.cc.i
+.PHONY : src/builder/buildertest.cc.i
+
+src/builder/buildertest.s: src/builder/buildertest.cc.s
+
+.PHONY : src/builder/buildertest.s
+
+# target to generate assembly for a file
+src/builder/buildertest.cc.s:
+	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/buildertest.cc.s
+.PHONY : src/builder/buildertest.cc.s
 
 src/facade/facedetest.o: src/facade/facedetest.cc.o
 
@@ -397,6 +464,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... builder.app"
 	@echo "... observer.app"
 	@echo "... edit_cache"
 	@echo "... singleton.app"
@@ -405,6 +473,12 @@ help:
 	@echo "... factory.app"
 	@echo "... wrapper.app"
 	@echo "... templatepattern.app"
+	@echo "... src/builder/builder.o"
+	@echo "... src/builder/builder.i"
+	@echo "... src/builder/builder.s"
+	@echo "... src/builder/buildertest.o"
+	@echo "... src/builder/buildertest.i"
+	@echo "... src/builder/buildertest.s"
 	@echo "... src/facade/facedetest.o"
 	@echo "... src/facade/facedetest.i"
 	@echo "... src/facade/facedetest.s"
