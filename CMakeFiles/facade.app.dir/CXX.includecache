@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/facade/facade.h
+iostream
+-
+
+/home/howard/work/design-patterns-in-cpp/src/facade/facedetest.cc
+facade.h
+/home/howard/work/design-patterns-in-cpp/src/facade/facade.h
+

@@ -137,6 +137,19 @@ singleton.app/fast:
 .PHONY : singleton.app/fast
 
 #=============================================================================
+# Target rules for targets named facade.app
+
+# Build rule for target.
+facade.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 facade.app
+.PHONY : facade.app
+
+# fast build rule for target.
+facade.app/fast:
+	$(MAKE) -f CMakeFiles/facade.app.dir/build.make CMakeFiles/facade.app.dir/build
+.PHONY : facade.app/fast
+
+#=============================================================================
 # Target rules for targets named strategy.app
 
 # Build rule for target.
@@ -187,6 +200,33 @@ templatepattern.app: cmake_check_build_system
 templatepattern.app/fast:
 	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/build
 .PHONY : templatepattern.app/fast
+
+src/facade/facedetest.o: src/facade/facedetest.cc.o
+
+.PHONY : src/facade/facedetest.o
+
+# target to build an object file
+src/facade/facedetest.cc.o:
+	$(MAKE) -f CMakeFiles/facade.app.dir/build.make CMakeFiles/facade.app.dir/src/facade/facedetest.cc.o
+.PHONY : src/facade/facedetest.cc.o
+
+src/facade/facedetest.i: src/facade/facedetest.cc.i
+
+.PHONY : src/facade/facedetest.i
+
+# target to preprocess a source file
+src/facade/facedetest.cc.i:
+	$(MAKE) -f CMakeFiles/facade.app.dir/build.make CMakeFiles/facade.app.dir/src/facade/facedetest.cc.i
+.PHONY : src/facade/facedetest.cc.i
+
+src/facade/facedetest.s: src/facade/facedetest.cc.s
+
+.PHONY : src/facade/facedetest.s
+
+# target to generate assembly for a file
+src/facade/facedetest.cc.s:
+	$(MAKE) -f CMakeFiles/facade.app.dir/build.make CMakeFiles/facade.app.dir/src/facade/facedetest.cc.s
+.PHONY : src/facade/facedetest.cc.s
 
 src/factory/main.o: src/factory/main.cc.o
 
@@ -360,10 +400,14 @@ help:
 	@echo "... observer.app"
 	@echo "... edit_cache"
 	@echo "... singleton.app"
+	@echo "... facade.app"
 	@echo "... strategy.app"
 	@echo "... factory.app"
 	@echo "... wrapper.app"
 	@echo "... templatepattern.app"
+	@echo "... src/facade/facedetest.o"
+	@echo "... src/facade/facedetest.i"
+	@echo "... src/facade/facedetest.s"
 	@echo "... src/factory/main.o"
 	@echo "... src/factory/main.i"
 	@echo "... src/factory/main.s"
