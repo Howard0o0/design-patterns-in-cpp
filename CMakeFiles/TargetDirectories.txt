@@ -1,3 +1,4 @@
+/home/howard/work/design-patterns-in-cpp/CMakeFiles/composite.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/filter.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/rebuild_cache.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/bridge.app.dir

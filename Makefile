@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named composite.app
+
+# Build rule for target.
+composite.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 composite.app
+.PHONY : composite.app
+
+# fast build rule for target.
+composite.app/fast:
+	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/build
+.PHONY : composite.app/fast
+
+#=============================================================================
 # Target rules for targets named filter.app
 
 # Build rule for target.
@@ -320,6 +333,33 @@ src/builder/buildertest.s: src/builder/buildertest.cc.s
 src/builder/buildertest.cc.s:
 	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/buildertest.cc.s
 .PHONY : src/builder/buildertest.cc.s
+
+src/composite/compositetest.o: src/composite/compositetest.cc.o
+
+.PHONY : src/composite/compositetest.o
+
+# target to build an object file
+src/composite/compositetest.cc.o:
+	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/src/composite/compositetest.cc.o
+.PHONY : src/composite/compositetest.cc.o
+
+src/composite/compositetest.i: src/composite/compositetest.cc.i
+
+.PHONY : src/composite/compositetest.i
+
+# target to preprocess a source file
+src/composite/compositetest.cc.i:
+	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/src/composite/compositetest.cc.i
+.PHONY : src/composite/compositetest.cc.i
+
+src/composite/compositetest.s: src/composite/compositetest.cc.s
+
+.PHONY : src/composite/compositetest.s
+
+# target to generate assembly for a file
+src/composite/compositetest.cc.s:
+	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/src/composite/compositetest.cc.s
+.PHONY : src/composite/compositetest.cc.s
 
 src/facade/facedetest.o: src/facade/facedetest.cc.o
 
@@ -543,6 +583,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... composite.app"
 	@echo "... filter.app"
 	@echo "... rebuild_cache"
 	@echo "... bridge.app"
@@ -564,6 +605,9 @@ help:
 	@echo "... src/builder/buildertest.o"
 	@echo "... src/builder/buildertest.i"
 	@echo "... src/builder/buildertest.s"
+	@echo "... src/composite/compositetest.o"
+	@echo "... src/composite/compositetest.i"
+	@echo "... src/composite/compositetest.s"
 	@echo "... src/facade/facedetest.o"
 	@echo "... src/facade/facedetest.i"
 	@echo "... src/facade/facedetest.s"

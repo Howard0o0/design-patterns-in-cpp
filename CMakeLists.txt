@@ -39,6 +39,7 @@ include_directories(
 		./src/builder
 		./src/bridge
 		./src/filter
+		./src/composite
 		)
 
 #find source files
@@ -52,6 +53,7 @@ aux_source_directory(./src/facade FACADE_SRC_FILES )
 aux_source_directory(./src/builder BUILDER_SRC_FILES )
 aux_source_directory(./src/bridge BRIDGE_SRC_FILES )
 aux_source_directory(./src/filter FILTER_SRC_FILES )
+aux_source_directory(./src/composite COMPOSITE_SRC_FILES )
 
 #创建工程文件
 add_executable(singleton.app ${SINGLETON_SRC_FILES} )
@@ -64,6 +66,7 @@ add_executable(facade.app ${FACADE_SRC_FILES} )
 add_executable(builder.app ${BUILDER_SRC_FILES} )
 add_executable(bridge.app ${BRIDGE_SRC_FILES} )
 add_executable(filter.app ${FILTER_SRC_FILES} )
+add_executable(composite.app ${COMPOSITE_SRC_FILES} )
  
 #添加Qt5依赖项
 # target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Core Qt5::Gui)

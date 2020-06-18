@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/composite/composite.h
+set
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/composite/compositetest.cc
+composite.h
+/home/howard/work/design-patterns-in-cpp/src/composite/composite.h
+iostream
+-
+

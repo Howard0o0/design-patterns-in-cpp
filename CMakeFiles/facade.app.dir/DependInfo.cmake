@@ -20,6 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "./src/builder"
   "./src/bridge"
   "./src/filter"
+  "./src/composite"
   )
 
 # Targets to which this target links.

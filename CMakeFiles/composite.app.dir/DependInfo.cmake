@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/howard/work/design-patterns-in-cpp/src/observer/observertest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/observer.app.dir/src/observer/observertest.cc.o"
+  "/home/howard/work/design-patterns-in-cpp/src/composite/compositetest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/composite.app.dir/src/composite/compositetest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
