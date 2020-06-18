@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/bridge/bridge.h
+iostream
+-
+
+/home/howard/work/design-patterns-in-cpp/src/bridge/bridgetest.cc
+bridge.h
+/home/howard/work/design-patterns-in-cpp/src/bridge/bridge.h
+

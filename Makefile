@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named filter.app
+
+# Build rule for target.
+filter.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 filter.app
+.PHONY : filter.app
+
+# fast build rule for target.
+filter.app/fast:
+	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/build
+.PHONY : filter.app/fast
+
+#=============================================================================
+# Target rules for targets named bridge.app
+
+# Build rule for target.
+bridge.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bridge.app
+.PHONY : bridge.app
+
+# fast build rule for target.
+bridge.app/fast:
+	$(MAKE) -f CMakeFiles/bridge.app.dir/build.make CMakeFiles/bridge.app.dir/build
+.PHONY : bridge.app/fast
+
+#=============================================================================
 # Target rules for targets named builder.app
 
 # Build rule for target.
@@ -213,6 +239,33 @@ templatepattern.app: cmake_check_build_system
 templatepattern.app/fast:
 	$(MAKE) -f CMakeFiles/templatepattern.app.dir/build.make CMakeFiles/templatepattern.app.dir/build
 .PHONY : templatepattern.app/fast
+
+src/bridge/bridgetest.o: src/bridge/bridgetest.cc.o
+
+.PHONY : src/bridge/bridgetest.o
+
+# target to build an object file
+src/bridge/bridgetest.cc.o:
+	$(MAKE) -f CMakeFiles/bridge.app.dir/build.make CMakeFiles/bridge.app.dir/src/bridge/bridgetest.cc.o
+.PHONY : src/bridge/bridgetest.cc.o
+
+src/bridge/bridgetest.i: src/bridge/bridgetest.cc.i
+
+.PHONY : src/bridge/bridgetest.i
+
+# target to preprocess a source file
+src/bridge/bridgetest.cc.i:
+	$(MAKE) -f CMakeFiles/bridge.app.dir/build.make CMakeFiles/bridge.app.dir/src/bridge/bridgetest.cc.i
+.PHONY : src/bridge/bridgetest.cc.i
+
+src/bridge/bridgetest.s: src/bridge/bridgetest.cc.s
+
+.PHONY : src/bridge/bridgetest.s
+
+# target to generate assembly for a file
+src/bridge/bridgetest.cc.s:
+	$(MAKE) -f CMakeFiles/bridge.app.dir/build.make CMakeFiles/bridge.app.dir/src/bridge/bridgetest.cc.s
+.PHONY : src/bridge/bridgetest.cc.s
 
 src/builder/builder.o: src/builder/builder.cc.o
 
@@ -321,6 +374,33 @@ src/factory/main.s: src/factory/main.cc.s
 src/factory/main.cc.s:
 	$(MAKE) -f CMakeFiles/factory.app.dir/build.make CMakeFiles/factory.app.dir/src/factory/main.cc.s
 .PHONY : src/factory/main.cc.s
+
+src/filter/filtertest.o: src/filter/filtertest.cc.o
+
+.PHONY : src/filter/filtertest.o
+
+# target to build an object file
+src/filter/filtertest.cc.o:
+	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/src/filter/filtertest.cc.o
+.PHONY : src/filter/filtertest.cc.o
+
+src/filter/filtertest.i: src/filter/filtertest.cc.i
+
+.PHONY : src/filter/filtertest.i
+
+# target to preprocess a source file
+src/filter/filtertest.cc.i:
+	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/src/filter/filtertest.cc.i
+.PHONY : src/filter/filtertest.cc.i
+
+src/filter/filtertest.s: src/filter/filtertest.cc.s
+
+.PHONY : src/filter/filtertest.s
+
+# target to generate assembly for a file
+src/filter/filtertest.cc.s:
+	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/src/filter/filtertest.cc.s
+.PHONY : src/filter/filtertest.cc.s
 
 src/observer/observertest.o: src/observer/observertest.cc.o
 
@@ -463,7 +543,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... filter.app"
 	@echo "... rebuild_cache"
+	@echo "... bridge.app"
 	@echo "... builder.app"
 	@echo "... observer.app"
 	@echo "... edit_cache"
@@ -473,6 +555,9 @@ help:
 	@echo "... factory.app"
 	@echo "... wrapper.app"
 	@echo "... templatepattern.app"
+	@echo "... src/bridge/bridgetest.o"
+	@echo "... src/bridge/bridgetest.i"
+	@echo "... src/bridge/bridgetest.s"
 	@echo "... src/builder/builder.o"
 	@echo "... src/builder/builder.i"
 	@echo "... src/builder/builder.s"
@@ -485,6 +570,9 @@ help:
 	@echo "... src/factory/main.o"
 	@echo "... src/factory/main.i"
 	@echo "... src/factory/main.s"
+	@echo "... src/filter/filtertest.o"
+	@echo "... src/filter/filtertest.i"
+	@echo "... src/filter/filtertest.s"
 	@echo "... src/observer/observertest.o"
 	@echo "... src/observer/observertest.i"
 	@echo "... src/observer/observertest.s"

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/filter/filter.h
+set
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/filter/filtertest.cc
+filter.h
+/home/howard/work/design-patterns-in-cpp/src/filter/filter.h
+iostream
+-
+memory
+-
+set
+-
+string
+-
+

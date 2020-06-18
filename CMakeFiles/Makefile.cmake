@@ -42,6 +42,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/filter.app.dir/DependInfo.cmake"
+  "CMakeFiles/bridge.app.dir/DependInfo.cmake"
   "CMakeFiles/builder.app.dir/DependInfo.cmake"
   "CMakeFiles/observer.app.dir/DependInfo.cmake"
   "CMakeFiles/singleton.app.dir/DependInfo.cmake"
