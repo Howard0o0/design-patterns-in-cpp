@@ -21,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "./src/bridge"
   "./src/filter"
   "./src/composite"
+  "./src/flyweight"
   )
 
 # Targets to which this target links.

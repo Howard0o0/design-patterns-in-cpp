@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweight.cc
+flyweight.h
+/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweight.h
+map
+-
+memory
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweight.h
+iostream
+-
+memory
+-
+string
+-
+unordered_map
+-
+
+/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweighttest.cc
+flyweight.h
+/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweight.h
+iostream
+-
+memory
+-
+unordered_map
+-
+

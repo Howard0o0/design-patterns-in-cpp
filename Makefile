@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named composite.app
+# Target rules for targets named flyweight.app
 
 # Build rule for target.
-composite.app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 composite.app
-.PHONY : composite.app
+flyweight.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flyweight.app
+.PHONY : flyweight.app
 
 # fast build rule for target.
-composite.app/fast:
-	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/build
-.PHONY : composite.app/fast
+flyweight.app/fast:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/build
+.PHONY : flyweight.app/fast
 
 #=============================================================================
 # Target rules for targets named filter.app
@@ -334,33 +334,6 @@ src/builder/buildertest.cc.s:
 	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/buildertest.cc.s
 .PHONY : src/builder/buildertest.cc.s
 
-src/composite/compositetest.o: src/composite/compositetest.cc.o
-
-.PHONY : src/composite/compositetest.o
-
-# target to build an object file
-src/composite/compositetest.cc.o:
-	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/src/composite/compositetest.cc.o
-.PHONY : src/composite/compositetest.cc.o
-
-src/composite/compositetest.i: src/composite/compositetest.cc.i
-
-.PHONY : src/composite/compositetest.i
-
-# target to preprocess a source file
-src/composite/compositetest.cc.i:
-	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/src/composite/compositetest.cc.i
-.PHONY : src/composite/compositetest.cc.i
-
-src/composite/compositetest.s: src/composite/compositetest.cc.s
-
-.PHONY : src/composite/compositetest.s
-
-# target to generate assembly for a file
-src/composite/compositetest.cc.s:
-	$(MAKE) -f CMakeFiles/composite.app.dir/build.make CMakeFiles/composite.app.dir/src/composite/compositetest.cc.s
-.PHONY : src/composite/compositetest.cc.s
-
 src/facade/facedetest.o: src/facade/facedetest.cc.o
 
 .PHONY : src/facade/facedetest.o
@@ -441,6 +414,60 @@ src/filter/filtertest.s: src/filter/filtertest.cc.s
 src/filter/filtertest.cc.s:
 	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/src/filter/filtertest.cc.s
 .PHONY : src/filter/filtertest.cc.s
+
+src/flyweight/flyweight.o: src/flyweight/flyweight.cc.o
+
+.PHONY : src/flyweight/flyweight.o
+
+# target to build an object file
+src/flyweight/flyweight.cc.o:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.o
+.PHONY : src/flyweight/flyweight.cc.o
+
+src/flyweight/flyweight.i: src/flyweight/flyweight.cc.i
+
+.PHONY : src/flyweight/flyweight.i
+
+# target to preprocess a source file
+src/flyweight/flyweight.cc.i:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.i
+.PHONY : src/flyweight/flyweight.cc.i
+
+src/flyweight/flyweight.s: src/flyweight/flyweight.cc.s
+
+.PHONY : src/flyweight/flyweight.s
+
+# target to generate assembly for a file
+src/flyweight/flyweight.cc.s:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.s
+.PHONY : src/flyweight/flyweight.cc.s
+
+src/flyweight/flyweighttest.o: src/flyweight/flyweighttest.cc.o
+
+.PHONY : src/flyweight/flyweighttest.o
+
+# target to build an object file
+src/flyweight/flyweighttest.cc.o:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.o
+.PHONY : src/flyweight/flyweighttest.cc.o
+
+src/flyweight/flyweighttest.i: src/flyweight/flyweighttest.cc.i
+
+.PHONY : src/flyweight/flyweighttest.i
+
+# target to preprocess a source file
+src/flyweight/flyweighttest.cc.i:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.i
+.PHONY : src/flyweight/flyweighttest.cc.i
+
+src/flyweight/flyweighttest.s: src/flyweight/flyweighttest.cc.s
+
+.PHONY : src/flyweight/flyweighttest.s
+
+# target to generate assembly for a file
+src/flyweight/flyweighttest.cc.s:
+	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.s
+.PHONY : src/flyweight/flyweighttest.cc.s
 
 src/observer/observertest.o: src/observer/observertest.cc.o
 
@@ -583,7 +610,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... composite.app"
+	@echo "... flyweight.app"
 	@echo "... filter.app"
 	@echo "... rebuild_cache"
 	@echo "... bridge.app"
@@ -605,9 +632,6 @@ help:
 	@echo "... src/builder/buildertest.o"
 	@echo "... src/builder/buildertest.i"
 	@echo "... src/builder/buildertest.s"
-	@echo "... src/composite/compositetest.o"
-	@echo "... src/composite/compositetest.i"
-	@echo "... src/composite/compositetest.s"
 	@echo "... src/facade/facedetest.o"
 	@echo "... src/facade/facedetest.i"
 	@echo "... src/facade/facedetest.s"
@@ -617,6 +641,12 @@ help:
 	@echo "... src/filter/filtertest.o"
 	@echo "... src/filter/filtertest.i"
 	@echo "... src/filter/filtertest.s"
+	@echo "... src/flyweight/flyweight.o"
+	@echo "... src/flyweight/flyweight.i"
+	@echo "... src/flyweight/flyweight.s"
+	@echo "... src/flyweight/flyweighttest.o"
+	@echo "... src/flyweight/flyweighttest.i"
+	@echo "... src/flyweight/flyweighttest.s"
 	@echo "... src/observer/observertest.o"
 	@echo "... src/observer/observertest.i"
 	@echo "... src/observer/observertest.s"

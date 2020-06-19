@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/howard/work/design-patterns-in-cpp/src/builder/builder.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/builder.app.dir/src/builder/builder.cc.o"
-  "/home/howard/work/design-patterns-in-cpp/src/builder/buildertest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/builder.app.dir/src/builder/buildertest.cc.o"
+  "/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweight.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.o"
+  "/home/howard/work/design-patterns-in-cpp/src/flyweight/flyweighttest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
