@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/commandpattern.app.dir/src/commandpattern/commandtest.cc.o  -o bin/commandpattern.app 

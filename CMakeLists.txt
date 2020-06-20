@@ -43,6 +43,7 @@ include_directories(
 		./src/flyweight
 		./src/proxy
 		./src/chainofresponsibility
+		./src/commandpattern
 		)
 
 #find source files
@@ -60,6 +61,7 @@ aux_source_directory(./src/composite COMPOSITE_SRC_FILES )
 aux_source_directory(./src/flyweight FLYWEIGHT_SRC_FILES )
 aux_source_directory(./src/proxy PROXY_SRC_FILES )
 aux_source_directory(./src/chainofresponsibility RESPONSIBILITY_SRC_FILES )
+aux_source_directory(./src/commandpattern COMMANDPATTERN_SRC_FILES )
 
 #创建工程文件
 add_executable(singleton.app ${SINGLETON_SRC_FILES} )
@@ -74,6 +76,7 @@ add_executable(bridge.app ${BRIDGE_SRC_FILES} )
 add_executable(filter.app ${FILTER_SRC_FILES} )
 add_executable(proxy.app ${PROXY_SRC_FILES} )
 add_executable(chainofresponsibilty.app ${RESPONSIBILITY_SRC_FILES} )
+add_executable(commandpattern.app ${COMMANDPATTERN_SRC_FILES} )
  
 #添加Qt5依赖项
 # target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Core Qt5::Gui)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/howard/work/design-patterns-in-cpp/src/filter/filtertest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/filter.app.dir/src/filter/filtertest.cc.o"
+  "/home/howard/work/design-patterns-in-cpp/src/commandpattern/commandtest.cc" "/home/howard/work/design-patterns-in-cpp/CMakeFiles/commandpattern.app.dir/src/commandpattern/commandtest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

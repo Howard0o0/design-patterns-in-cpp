@@ -47,6 +47,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/bridge.app.dir/DependInfo.cmake"
   "CMakeFiles/builder.app.dir/DependInfo.cmake"
   "CMakeFiles/observer.app.dir/DependInfo.cmake"
+  "CMakeFiles/commandpattern.app.dir/DependInfo.cmake"
   "CMakeFiles/singleton.app.dir/DependInfo.cmake"
   "CMakeFiles/facade.app.dir/DependInfo.cmake"
   "CMakeFiles/strategy.app.dir/DependInfo.cmake"

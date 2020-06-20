@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/commandpattern/command.h
+iostream
+-
+memory
+-
+string
+-
+vector
+-
+
+/home/howard/work/design-patterns-in-cpp/src/commandpattern/commandtest.cc
+command.h
+/home/howard/work/design-patterns-in-cpp/src/commandpattern/command.h
+memory
+-
+

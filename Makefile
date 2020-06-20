@@ -176,6 +176,19 @@ observer.app/fast:
 .PHONY : observer.app/fast
 
 #=============================================================================
+# Target rules for targets named commandpattern.app
+
+# Build rule for target.
+commandpattern.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 commandpattern.app
+.PHONY : commandpattern.app
+
+# fast build rule for target.
+commandpattern.app/fast:
+	$(MAKE) -f CMakeFiles/commandpattern.app.dir/build.make CMakeFiles/commandpattern.app.dir/build
+.PHONY : commandpattern.app/fast
+
+#=============================================================================
 # Target rules for targets named singleton.app
 
 # Build rule for target.
@@ -373,6 +386,33 @@ src/chainofresponsibility/chainofresponsibilitytest.s: src/chainofresponsibility
 src/chainofresponsibility/chainofresponsibilitytest.cc.s:
 	$(MAKE) -f CMakeFiles/chainofresponsibilty.app.dir/build.make CMakeFiles/chainofresponsibilty.app.dir/src/chainofresponsibility/chainofresponsibilitytest.cc.s
 .PHONY : src/chainofresponsibility/chainofresponsibilitytest.cc.s
+
+src/commandpattern/commandtest.o: src/commandpattern/commandtest.cc.o
+
+.PHONY : src/commandpattern/commandtest.o
+
+# target to build an object file
+src/commandpattern/commandtest.cc.o:
+	$(MAKE) -f CMakeFiles/commandpattern.app.dir/build.make CMakeFiles/commandpattern.app.dir/src/commandpattern/commandtest.cc.o
+.PHONY : src/commandpattern/commandtest.cc.o
+
+src/commandpattern/commandtest.i: src/commandpattern/commandtest.cc.i
+
+.PHONY : src/commandpattern/commandtest.i
+
+# target to preprocess a source file
+src/commandpattern/commandtest.cc.i:
+	$(MAKE) -f CMakeFiles/commandpattern.app.dir/build.make CMakeFiles/commandpattern.app.dir/src/commandpattern/commandtest.cc.i
+.PHONY : src/commandpattern/commandtest.cc.i
+
+src/commandpattern/commandtest.s: src/commandpattern/commandtest.cc.s
+
+.PHONY : src/commandpattern/commandtest.s
+
+# target to generate assembly for a file
+src/commandpattern/commandtest.cc.s:
+	$(MAKE) -f CMakeFiles/commandpattern.app.dir/build.make CMakeFiles/commandpattern.app.dir/src/commandpattern/commandtest.cc.s
+.PHONY : src/commandpattern/commandtest.cc.s
 
 src/facade/facedetest.o: src/facade/facedetest.cc.o
 
@@ -630,6 +670,7 @@ help:
 	@echo "... builder.app"
 	@echo "... observer.app"
 	@echo "... edit_cache"
+	@echo "... commandpattern.app"
 	@echo "... singleton.app"
 	@echo "... facade.app"
 	@echo "... strategy.app"
@@ -649,6 +690,9 @@ help:
 	@echo "... src/chainofresponsibility/chainofresponsibilitytest.o"
 	@echo "... src/chainofresponsibility/chainofresponsibilitytest.i"
 	@echo "... src/chainofresponsibility/chainofresponsibilitytest.s"
+	@echo "... src/commandpattern/commandtest.o"
+	@echo "... src/commandpattern/commandtest.i"
+	@echo "... src/commandpattern/commandtest.s"
 	@echo "... src/facade/facedetest.o"
 	@echo "... src/facade/facedetest.i"
 	@echo "... src/facade/facedetest.s"
