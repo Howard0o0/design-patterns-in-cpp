@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/proxy/proxy.h
+iostream
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/proxy/proxytest.cc
+proxy.h
+/home/howard/work/design-patterns-in-cpp/src/proxy/proxy.h
+iostream
+-
+memory
+-
+

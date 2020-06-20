@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named flyweight.app
+# Target rules for targets named chainofresponsibilty.app
 
 # Build rule for target.
-flyweight.app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 flyweight.app
-.PHONY : flyweight.app
+chainofresponsibilty.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chainofresponsibilty.app
+.PHONY : chainofresponsibilty.app
 
 # fast build rule for target.
-flyweight.app/fast:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/build
-.PHONY : flyweight.app/fast
+chainofresponsibilty.app/fast:
+	$(MAKE) -f CMakeFiles/chainofresponsibilty.app.dir/build.make CMakeFiles/chainofresponsibilty.app.dir/build
+.PHONY : chainofresponsibilty.app/fast
 
 #=============================================================================
 # Target rules for targets named filter.app
@@ -213,6 +213,19 @@ strategy.app: cmake_check_build_system
 strategy.app/fast:
 	$(MAKE) -f CMakeFiles/strategy.app.dir/build.make CMakeFiles/strategy.app.dir/build
 .PHONY : strategy.app/fast
+
+#=============================================================================
+# Target rules for targets named proxy.app
+
+# Build rule for target.
+proxy.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 proxy.app
+.PHONY : proxy.app
+
+# fast build rule for target.
+proxy.app/fast:
+	$(MAKE) -f CMakeFiles/proxy.app.dir/build.make CMakeFiles/proxy.app.dir/build
+.PHONY : proxy.app/fast
 
 #=============================================================================
 # Target rules for targets named factory.app
@@ -334,6 +347,33 @@ src/builder/buildertest.cc.s:
 	$(MAKE) -f CMakeFiles/builder.app.dir/build.make CMakeFiles/builder.app.dir/src/builder/buildertest.cc.s
 .PHONY : src/builder/buildertest.cc.s
 
+src/chainofresponsibility/chainofresponsibilitytest.o: src/chainofresponsibility/chainofresponsibilitytest.cc.o
+
+.PHONY : src/chainofresponsibility/chainofresponsibilitytest.o
+
+# target to build an object file
+src/chainofresponsibility/chainofresponsibilitytest.cc.o:
+	$(MAKE) -f CMakeFiles/chainofresponsibilty.app.dir/build.make CMakeFiles/chainofresponsibilty.app.dir/src/chainofresponsibility/chainofresponsibilitytest.cc.o
+.PHONY : src/chainofresponsibility/chainofresponsibilitytest.cc.o
+
+src/chainofresponsibility/chainofresponsibilitytest.i: src/chainofresponsibility/chainofresponsibilitytest.cc.i
+
+.PHONY : src/chainofresponsibility/chainofresponsibilitytest.i
+
+# target to preprocess a source file
+src/chainofresponsibility/chainofresponsibilitytest.cc.i:
+	$(MAKE) -f CMakeFiles/chainofresponsibilty.app.dir/build.make CMakeFiles/chainofresponsibilty.app.dir/src/chainofresponsibility/chainofresponsibilitytest.cc.i
+.PHONY : src/chainofresponsibility/chainofresponsibilitytest.cc.i
+
+src/chainofresponsibility/chainofresponsibilitytest.s: src/chainofresponsibility/chainofresponsibilitytest.cc.s
+
+.PHONY : src/chainofresponsibility/chainofresponsibilitytest.s
+
+# target to generate assembly for a file
+src/chainofresponsibility/chainofresponsibilitytest.cc.s:
+	$(MAKE) -f CMakeFiles/chainofresponsibilty.app.dir/build.make CMakeFiles/chainofresponsibilty.app.dir/src/chainofresponsibility/chainofresponsibilitytest.cc.s
+.PHONY : src/chainofresponsibility/chainofresponsibilitytest.cc.s
+
 src/facade/facedetest.o: src/facade/facedetest.cc.o
 
 .PHONY : src/facade/facedetest.o
@@ -415,60 +455,6 @@ src/filter/filtertest.cc.s:
 	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/src/filter/filtertest.cc.s
 .PHONY : src/filter/filtertest.cc.s
 
-src/flyweight/flyweight.o: src/flyweight/flyweight.cc.o
-
-.PHONY : src/flyweight/flyweight.o
-
-# target to build an object file
-src/flyweight/flyweight.cc.o:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.o
-.PHONY : src/flyweight/flyweight.cc.o
-
-src/flyweight/flyweight.i: src/flyweight/flyweight.cc.i
-
-.PHONY : src/flyweight/flyweight.i
-
-# target to preprocess a source file
-src/flyweight/flyweight.cc.i:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.i
-.PHONY : src/flyweight/flyweight.cc.i
-
-src/flyweight/flyweight.s: src/flyweight/flyweight.cc.s
-
-.PHONY : src/flyweight/flyweight.s
-
-# target to generate assembly for a file
-src/flyweight/flyweight.cc.s:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweight.cc.s
-.PHONY : src/flyweight/flyweight.cc.s
-
-src/flyweight/flyweighttest.o: src/flyweight/flyweighttest.cc.o
-
-.PHONY : src/flyweight/flyweighttest.o
-
-# target to build an object file
-src/flyweight/flyweighttest.cc.o:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.o
-.PHONY : src/flyweight/flyweighttest.cc.o
-
-src/flyweight/flyweighttest.i: src/flyweight/flyweighttest.cc.i
-
-.PHONY : src/flyweight/flyweighttest.i
-
-# target to preprocess a source file
-src/flyweight/flyweighttest.cc.i:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.i
-.PHONY : src/flyweight/flyweighttest.cc.i
-
-src/flyweight/flyweighttest.s: src/flyweight/flyweighttest.cc.s
-
-.PHONY : src/flyweight/flyweighttest.s
-
-# target to generate assembly for a file
-src/flyweight/flyweighttest.cc.s:
-	$(MAKE) -f CMakeFiles/flyweight.app.dir/build.make CMakeFiles/flyweight.app.dir/src/flyweight/flyweighttest.cc.s
-.PHONY : src/flyweight/flyweighttest.cc.s
-
 src/observer/observertest.o: src/observer/observertest.cc.o
 
 .PHONY : src/observer/observertest.o
@@ -495,6 +481,33 @@ src/observer/observertest.s: src/observer/observertest.cc.s
 src/observer/observertest.cc.s:
 	$(MAKE) -f CMakeFiles/observer.app.dir/build.make CMakeFiles/observer.app.dir/src/observer/observertest.cc.s
 .PHONY : src/observer/observertest.cc.s
+
+src/proxy/proxytest.o: src/proxy/proxytest.cc.o
+
+.PHONY : src/proxy/proxytest.o
+
+# target to build an object file
+src/proxy/proxytest.cc.o:
+	$(MAKE) -f CMakeFiles/proxy.app.dir/build.make CMakeFiles/proxy.app.dir/src/proxy/proxytest.cc.o
+.PHONY : src/proxy/proxytest.cc.o
+
+src/proxy/proxytest.i: src/proxy/proxytest.cc.i
+
+.PHONY : src/proxy/proxytest.i
+
+# target to preprocess a source file
+src/proxy/proxytest.cc.i:
+	$(MAKE) -f CMakeFiles/proxy.app.dir/build.make CMakeFiles/proxy.app.dir/src/proxy/proxytest.cc.i
+.PHONY : src/proxy/proxytest.cc.i
+
+src/proxy/proxytest.s: src/proxy/proxytest.cc.s
+
+.PHONY : src/proxy/proxytest.s
+
+# target to generate assembly for a file
+src/proxy/proxytest.cc.s:
+	$(MAKE) -f CMakeFiles/proxy.app.dir/build.make CMakeFiles/proxy.app.dir/src/proxy/proxytest.cc.s
+.PHONY : src/proxy/proxytest.cc.s
 
 src/singleton/main.o: src/singleton/main.cc.o
 
@@ -610,7 +623,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... flyweight.app"
+	@echo "... chainofresponsibilty.app"
 	@echo "... filter.app"
 	@echo "... rebuild_cache"
 	@echo "... bridge.app"
@@ -620,6 +633,7 @@ help:
 	@echo "... singleton.app"
 	@echo "... facade.app"
 	@echo "... strategy.app"
+	@echo "... proxy.app"
 	@echo "... factory.app"
 	@echo "... wrapper.app"
 	@echo "... templatepattern.app"
@@ -632,6 +646,9 @@ help:
 	@echo "... src/builder/buildertest.o"
 	@echo "... src/builder/buildertest.i"
 	@echo "... src/builder/buildertest.s"
+	@echo "... src/chainofresponsibility/chainofresponsibilitytest.o"
+	@echo "... src/chainofresponsibility/chainofresponsibilitytest.i"
+	@echo "... src/chainofresponsibility/chainofresponsibilitytest.s"
 	@echo "... src/facade/facedetest.o"
 	@echo "... src/facade/facedetest.i"
 	@echo "... src/facade/facedetest.s"
@@ -641,15 +658,12 @@ help:
 	@echo "... src/filter/filtertest.o"
 	@echo "... src/filter/filtertest.i"
 	@echo "... src/filter/filtertest.s"
-	@echo "... src/flyweight/flyweight.o"
-	@echo "... src/flyweight/flyweight.i"
-	@echo "... src/flyweight/flyweight.s"
-	@echo "... src/flyweight/flyweighttest.o"
-	@echo "... src/flyweight/flyweighttest.i"
-	@echo "... src/flyweight/flyweighttest.s"
 	@echo "... src/observer/observertest.o"
 	@echo "... src/observer/observertest.i"
 	@echo "... src/observer/observertest.s"
+	@echo "... src/proxy/proxytest.o"
+	@echo "... src/proxy/proxytest.i"
+	@echo "... src/proxy/proxytest.s"
 	@echo "... src/singleton/main.o"
 	@echo "... src/singleton/main.i"
 	@echo "... src/singleton/main.s"

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+./src/chainofresponsibility/chainofresponsibility.h
+iostream
+-
+memory
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/chainofresponsibility/chainofresponsibilitytest.cc
+chainofresponsibility.h
+-
+memory
+-
+

@@ -23,6 +23,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "./src/filter"
   "./src/composite"
   "./src/flyweight"
+  "./src/proxy"
+  "./src/chainofresponsibility"
   )
 
 # Targets to which this target links.

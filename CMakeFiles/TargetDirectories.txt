@@ -1,4 +1,4 @@
-/home/howard/work/design-patterns-in-cpp/CMakeFiles/flyweight.app.dir
+/home/howard/work/design-patterns-in-cpp/CMakeFiles/chainofresponsibilty.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/filter.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/rebuild_cache.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/bridge.app.dir
@@ -8,6 +8,7 @@
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/singleton.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/facade.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/strategy.app.dir
+/home/howard/work/design-patterns-in-cpp/CMakeFiles/proxy.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/factory.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/wrapper.app.dir
 /home/howard/work/design-patterns-in-cpp/CMakeFiles/templatepattern.app.dir

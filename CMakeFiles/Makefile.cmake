@@ -42,7 +42,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/flyweight.app.dir/DependInfo.cmake"
+  "CMakeFiles/chainofresponsibilty.app.dir/DependInfo.cmake"
   "CMakeFiles/filter.app.dir/DependInfo.cmake"
   "CMakeFiles/bridge.app.dir/DependInfo.cmake"
   "CMakeFiles/builder.app.dir/DependInfo.cmake"
@@ -50,6 +50,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/singleton.app.dir/DependInfo.cmake"
   "CMakeFiles/facade.app.dir/DependInfo.cmake"
   "CMakeFiles/strategy.app.dir/DependInfo.cmake"
+  "CMakeFiles/proxy.app.dir/DependInfo.cmake"
   "CMakeFiles/factory.app.dir/DependInfo.cmake"
   "CMakeFiles/wrapper.app.dir/DependInfo.cmake"
   "CMakeFiles/templatepattern.app.dir/DependInfo.cmake"
