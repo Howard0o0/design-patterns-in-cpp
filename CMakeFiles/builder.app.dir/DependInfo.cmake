@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "./src/proxy"
   "./src/chainofresponsibility"
   "./src/commandpattern"
+  "./src/interpret"
   )
 
 # Targets to which this target links.

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/work/design-patterns-in-cpp/src/interpret/interpretpattern.h
+memory
+-
+string
+-
+
+/home/howard/work/design-patterns-in-cpp/src/interpret/interpretpatterntest.cc
+interpretpattern.h
+/home/howard/work/design-patterns-in-cpp/src/interpret/interpretpattern.h
+iostream
+-
+memory
+-
+

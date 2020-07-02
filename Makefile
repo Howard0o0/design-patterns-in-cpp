@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named interpret.app
+
+# Build rule for target.
+interpret.app: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 interpret.app
+.PHONY : interpret.app
+
+# fast build rule for target.
+interpret.app/fast:
+	$(MAKE) -f CMakeFiles/interpret.app.dir/build.make CMakeFiles/interpret.app.dir/build
+.PHONY : interpret.app/fast
+
+#=============================================================================
 # Target rules for targets named chainofresponsibilty.app
 
 # Build rule for target.
@@ -495,6 +508,33 @@ src/filter/filtertest.cc.s:
 	$(MAKE) -f CMakeFiles/filter.app.dir/build.make CMakeFiles/filter.app.dir/src/filter/filtertest.cc.s
 .PHONY : src/filter/filtertest.cc.s
 
+src/interpret/interpretpatterntest.o: src/interpret/interpretpatterntest.cc.o
+
+.PHONY : src/interpret/interpretpatterntest.o
+
+# target to build an object file
+src/interpret/interpretpatterntest.cc.o:
+	$(MAKE) -f CMakeFiles/interpret.app.dir/build.make CMakeFiles/interpret.app.dir/src/interpret/interpretpatterntest.cc.o
+.PHONY : src/interpret/interpretpatterntest.cc.o
+
+src/interpret/interpretpatterntest.i: src/interpret/interpretpatterntest.cc.i
+
+.PHONY : src/interpret/interpretpatterntest.i
+
+# target to preprocess a source file
+src/interpret/interpretpatterntest.cc.i:
+	$(MAKE) -f CMakeFiles/interpret.app.dir/build.make CMakeFiles/interpret.app.dir/src/interpret/interpretpatterntest.cc.i
+.PHONY : src/interpret/interpretpatterntest.cc.i
+
+src/interpret/interpretpatterntest.s: src/interpret/interpretpatterntest.cc.s
+
+.PHONY : src/interpret/interpretpatterntest.s
+
+# target to generate assembly for a file
+src/interpret/interpretpatterntest.cc.s:
+	$(MAKE) -f CMakeFiles/interpret.app.dir/build.make CMakeFiles/interpret.app.dir/src/interpret/interpretpatterntest.cc.s
+.PHONY : src/interpret/interpretpatterntest.cc.s
+
 src/observer/observertest.o: src/observer/observertest.cc.o
 
 .PHONY : src/observer/observertest.o
@@ -663,6 +703,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... interpret.app"
 	@echo "... chainofresponsibilty.app"
 	@echo "... filter.app"
 	@echo "... rebuild_cache"
@@ -702,6 +743,9 @@ help:
 	@echo "... src/filter/filtertest.o"
 	@echo "... src/filter/filtertest.i"
 	@echo "... src/filter/filtertest.s"
+	@echo "... src/interpret/interpretpatterntest.o"
+	@echo "... src/interpret/interpretpatterntest.i"
+	@echo "... src/interpret/interpretpatterntest.s"
 	@echo "... src/observer/observertest.o"
 	@echo "... src/observer/observertest.i"
 	@echo "... src/observer/observertest.s"
